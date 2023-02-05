@@ -35,7 +35,7 @@ export default function Contact({ requestHandler }: Void) {
 
     return (
         <div
-            className='bg-gray-800 realtive font-sans pt-11 max-w-screen text-white w-screen'>
+            className='bg-gray-800 realtive font-sans pt-11 max-w-screen text-white '>
             <div className='relative md:block max-w-[80%]'>
                 <div className='w-10/6 text-3xl text-center pb-8 
                 md:-translate-x-40

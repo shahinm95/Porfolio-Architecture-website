@@ -49,7 +49,7 @@ export default function ImageCarousel() {
 
     return (
         <div id="home"
-            className='flex relative max-w-screen mt-[-200px]  h-[120vh] z-[-1]'>
+            className='flex relative max-w-screen mt-[-200px]  h-[120vh] z-[1]'>
             <AnimatePresence>
                 <motion.div key="modalOne"
                     initial={{ opacity: 0 }}
