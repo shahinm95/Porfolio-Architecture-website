@@ -4,8 +4,8 @@ import { useInView } from "react-intersection-observer";
 
 
 const animateToUp = {
-    visible: { opacity: 1, translateY: 0, transition: { duration: 1 } },
-    hidden: { opacity: 0, translateY: 30 }
+    visible: { opacity: 1, translateY: -30, transition: { duration: 1 } },
+    hidden: { opacity: 0, translateY: 0 }
 };
 const animateToRight = {
     visible: { opacity: 1, translateX: -30, transition: { duration: 1 } },
@@ -28,21 +28,22 @@ export default function About() {
 
     return (
         <div id="about"
-            className='w-screen h-fit mb-1 max-h-[120vh] bg-white pt-28 pb-1 relative'>
-            <div className=' w-screen mr-4 ml-14 md:ml-[250px] md:flex md:mr-[50px]'>
-                <div className='max-w-screen-sm md:w-[515px] '>
-                    <motion.h1  
+            className=' max-w-screen  mb-1 max-h-[120vh] bg-white pt-28 pb-1 relative'>
+            <div className='   ml-14 md:ml-[250px] md:flex md:mr-[50px]'>
+                <div className='  '>
+                    <motion.h1
                         ref={ref}
                         animate={controls}
                         initial="hidden"
                         variants={animateToUp}
-                        className='text-4xl pt-7 font-bold'>
+                        className='text-4xl pt-7 font-bold max-w-screen'>
                         HILIGHT YOUR LIFE</motion.h1>
                     <motion.p
                         animate={controls}
                         initial="hidden"
                         variants={animateToRight}
-                        className='mt-7 text-base text-gray-400 font-serif	max-w-[400px]'>An exclusive house layout or a custom solutions - we'll take all your wishes
+                        className='mt-7 text-base text-gray-400 font-serif	w-[400px]'>
+                        An exclusive house layout or a custom solutions - we'll take all your wishes
                         into account to design the area of your dreams and make the design so good,
                         you'll always want to return.
                     </motion.p>
@@ -52,7 +53,7 @@ export default function About() {
                     initial="hidden"
                     variants={animateToUp}
                     style={{ backgroundImage: `url(/images/about/first.jpg)` }}
-                    className='hidden md:block lg:w-[250px] lg:h-[607px] xl:w-[513px] xl:h-[607px]  bg-cover bg-center translate-y-[-50px] absolute right-0'>
+                    className='hidden md:block lg:w-[250px] lg:h-[607px] xl:w-[513px] xl:h-[607px]  bg-cover bg-center translate-y-[-50px] absolute right-3'>
                 </motion.div>
             </div>
             <div className='ml-20 mt-6 md:ml-[200px] md:flex md:mt-40'>

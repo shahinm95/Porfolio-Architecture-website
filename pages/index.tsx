@@ -20,8 +20,8 @@ const Home: NextPage = () => {
   }
 
   return (
-    <div>
-      {request && <Request menueHandler={menueHandler} requestHandler={requestHandler} />}
+    <div className='max-w-screen '>
+      {request && <Request menueHandler={menueHandler} menue={menue} requestHandler={requestHandler} />}
       {menue && !request && <Menue menueHandler={menueHandler} requestHandler={requestHandler} />}
       {!menue && !request && <div className='' >
         <Header menueHandler={menueHandler} requestHandler={requestHandler} />

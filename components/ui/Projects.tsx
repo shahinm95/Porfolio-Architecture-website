@@ -21,7 +21,7 @@ export default function Projects() {
 
     return (
         <div id="projects"
-        className='bg-gray-800  text-white w-screen mt-[400px] pt-12'>
+        className='bg-gray-800 max-w-screen text-white mt-[400px] pt-12 mx-auto'>
             <div className='mx-10 font-serif md:text-center'>
                 <h1 className='text-3xl pt-10'>
                     OUR PROJECTS
@@ -32,7 +32,7 @@ export default function Projects() {
                     design.
                 </p>
             </div>
-            <div className='sm:flex mt-20 mx-10' ref={ref}>
+            <div className='sm:flex md:justify-center mt-20 mx-auto px-10' ref={ref}>
                 <motion.div
                     animate={controls}
                     initial="hidden"
@@ -73,7 +73,7 @@ export default function Projects() {
                 animate={controls}
                 initial="hidden"
                 variants={animateToUp}
-                className='sm:flex mt-5 mx-10'>
+                className='sm:flex mt-5 md:justify-center mx-auto px-10'>
                 <div
                     className='w-10/6 h-[350px] mt-1 group sm:h-[500px] bg-cover bg-center mx-1 relative'
                 >

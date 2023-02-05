@@ -49,7 +49,7 @@ export default function ImageCarousel() {
 
     return (
         <div id="home"
-            className='flex  mt-[-200px] w-[99vw] h-[120vh] z-[-1]'>
+            className='flex relative max-w-screen mt-[-200px]  h-[120vh] z-[-1]'>
             <AnimatePresence>
                 <motion.div key="modalOne"
                     initial={{ opacity: 0 }}
@@ -65,7 +65,7 @@ export default function ImageCarousel() {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ ease: "easeOut", duration: 1 }}
-                    className='absolute top-[50%] left-[10%] text-5xl text-white duration-800'>
+                    className=' top-[50%] absolute left-[10%] text-5xl text-white duration-800'>
                     {slide[currentImage].title}
                 </motion.div>
             </AnimatePresence>

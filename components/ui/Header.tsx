@@ -15,12 +15,15 @@ export default function Header({ menueHandler, requestHandler }: Void) {
     function classNames(...classes: string[]): string {
         return classes.filter(Boolean).join(" ")
     }
+    if (scrollPosition > 199) {
+        console.log('scroll')
+    }
 
     return (
         <div className={classNames(scrollPosition > 199 ?
             "bg-gray-100 items-center text-black"
             : "bg-transparent sm:items-end text-white",
-            "flex justify-between h-20  transition px-16 sticky z-10 top-0 duration-500")}
+            "flex justify-between h-20  transition px-16 max-w-screen sticky z-10 top-0 duration-500")}
         >
             <div className='flex justify-between w-2/3 sm:w-1/3'>
                 <Link href="#home" className='float-left min-w-max sm:pr-5 pt-7 sm:pt-0  font-bold'>SHAHIN DESIGN</Link>

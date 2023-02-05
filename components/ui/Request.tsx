@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { AiFillCloseCircle } from "react-icons/ai"
-import {  motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 interface Form {
     name: string;
@@ -16,9 +16,10 @@ interface Form {
 interface Void {
     menueHandler: () => void;
     requestHandler: () => void;
+    menue: boolean;
 }
 
-export default function Request({ requestHandler, menueHandler }: Void) {
+export default function Request({ requestHandler, menueHandler, menue }: Void) {
     const [formVals, setFormVals] = useState<Form>({
         name: "",
         last: "",
@@ -42,7 +43,10 @@ export default function Request({ requestHandler, menueHandler }: Void) {
             area: 0,
         })
         requestHandler();
-        menueHandler();
+        if (menue) {
+            menueHandler();
+        }
+
     }
 
     const nameHandler = (e: React.FormEvent<HTMLInputElement>): void => {
