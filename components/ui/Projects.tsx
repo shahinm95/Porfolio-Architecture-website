@@ -21,7 +21,7 @@ export default function Projects() {
 
     return (
         <div id="projects"
-        className='bg-gray-800 max-w-screen text-white mt-[400px] pt-12 mx-auto'>
+        className='bg-gray-800 max-w-screen text-white pt-12 mx-auto'>
             <div className='mx-10 font-serif md:text-center'>
                 <h1 className='text-3xl pt-10'>
                     OUR PROJECTS

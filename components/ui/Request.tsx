@@ -122,8 +122,8 @@ export default function Request({ requestHandler, menueHandler, menue }: Void) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            className='w-screen h-screen bg-gray-800 pt-2  '>
-            <form onSubmit={submitHandler} className="pt-3 mx-auto max-w-[810px]
+            className='w-screen  h-screen bg-gray-800 pt-2  '>
+            <form onSubmit={submitHandler} className="pt-3 mx-auto max-w-[810px]  
             md:my-auto 
             ">
                 <div className='w-[80%] mx-auto text-gray-500  bg-gray-100 pb-1 md:my-4
@@ -229,7 +229,7 @@ export default function Request({ requestHandler, menueHandler, menue }: Void) {
                 </div>
                 <button type='submit'
                     className="border bg-white border-white  hover:bg-gray-800 hover:text-white
-                        px-7 py-3 mt-2 mx-auto block transition-colors  duration-500 md:my-12
+                        px-7 py-3 mt-[8%] mx-auto block transition-colors  duration-500 md:my-12
                         ">
                     Send Request
                 </button>
